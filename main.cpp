@@ -1,8 +1,8 @@
-#include <iostream> //подключаем стандартную библиотеку, отвечающую за управление консолью, ввод, вывод, и тп.
-#include <string> //это мы позже разберем
-#include <windows.h> // и это
+#include <iostream>
+#include <string>
+#include <Windows.h>
 
-using namespace std; //подключаем пространство имен (не стоит пока углубляться в детали, делаем вид, что ничего кроме упрощения написания кода оно не делает)
+using namespace std;
 
 int main()
 {
@@ -114,7 +114,7 @@ int main()
 
     //10
     int g;
-    cout << "Введи число, а после нажми Enter:";
+    cout << "Введи число, а после нажми Enter:" << endl;
 
     cin >> g;
     cout << "g = " << g << endl;
@@ -137,4 +137,97 @@ int main()
     cout << "h = " << h << endl;
     //11
 
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//12" << endl;
+
+
+    //12
+    if(true){
+        cout << "Это условие правдиво" << endl;
+    }
+    //12
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//13" << endl;
+
+
+    //13
+    cout << "h = " << h << endl;
+    if(h){
+        cout << "Это условие правдиво" << endl;
+    }
+    else{
+        cout << "Это условие ложно" << endl;
+    }
+    //13
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//14" << endl;
+
+
+    //14
+    int i;
+    cout << "Введи число, а после нажми Enter:" << endl;
+    cin >> i;
+    if(i < 5){
+        cout << "i < 5" << endl;
+    }
+    else if(i > 5){
+        cout << "i > 5" << endl;
+    }
+    else{
+        cout << "i = 5" << endl;
+    }
+    //14
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); getline(cin, enter); cout << "//15" << endl;
+
+
+    //15
+    int j = 0;
+    while(j != 5){
+        cout << "Введи число, а после нажми Enter:" << endl;
+        cin >> j;
+    }
+    //15
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); getline(cin, enter); cout << "//16" << endl;
+
+
+    //16
+    int k = 0;
+    while(k < 5){
+        cout << "k = " << k << endl;
+        k++;
+    }
+    //16
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//17" << endl;
+
+
+    //17
+    for (int l = 0; l < 5; l++) {
+        cout << "l = " << l << endl;
+    }
+    //17
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//18" << endl;
+
+
+    //18
+    k = 0;
+    do {
+        cout << "k = " << k << endl;
+        k++;
+    } while (k < 5);
+    cout << endl;
+    do {
+        cout << "k = " << k << endl;
+        k++;
+    } while (k < 5);
+    //18
 }
