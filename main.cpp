@@ -230,4 +230,71 @@ int main()
         k++;
     } while (k < 5);
     //18
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//19" << endl;
+
+
+    //19
+    int A[10];
+    cout << "A = " << A << endl;
+    cout << A[0] << " " << A[1] << " " << A[2] << " " << A[3] << " " <<A[4] << " " <<A[5] << " " << A[6] << " " << A[7] << " " << A[8] << " " << A[9] << endl;
+    //19
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//20" << endl;
+
+
+    //20
+    for (int l = 0; l < 10; l++) {
+        A[l] = l;
+    }
+    for (int l = 0; l < 10; l++) {
+        cout << A[l] << " ";
+    }
+    cout << endl;
+    //20
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//21" << endl;
+
+
+    //21
+    int &ref = a;
+    cout << "a = " << a << endl;
+    cout << "ref = " << ref << endl;
+    a++;
+    cout << "a = " << a << endl;
+    cout << "ref = " << ref << endl;
+    //21
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//22" << endl;
+
+
+    //22
+    int *ptr = &a;
+    cout << "ptr = " << ptr << endl;
+    cout << "*ptr = " << *ptr << endl;
+    //22
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//23" << endl;
+
+
+    //23
+    cout << "&a = " << &a << endl;
+    cout << "*&a = " << *&a << endl;
+    //23
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//24" << endl;
+
+
+    //24
+    cout << "A = " << A << endl;
+    cout << "*A = " << *A << endl;
+    cout << "A + 1 = " << A + 1 << endl;
+    cout << "*(A + 1) = " << *(A + 1) << endl;
+    //24
 }
