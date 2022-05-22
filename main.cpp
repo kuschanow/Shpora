@@ -297,4 +297,98 @@ int main()
     cout << "A + 1 = " << A + 1 << endl;
     cout << "*(A + 1) = " << *(A + 1) << endl;
     //24
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//25" << endl;
+
+
+    //25
+    int const m = 6;
+    cout << "m = " << m << endl;
+    float const pi = 3.14;
+    cout << "m + pi = " << m + pi << endl;
+    //25
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//26" << endl;
+
+
+    //26
+    int B[m];
+    B[0] = 2;
+    cout << B[0] << " ";
+    for (int l = 1; l < m; l++) {
+        B[l] = B[l - 1] * 2;
+        cout << B[l] << " ";
+    }
+    cout << endl;
+    //26
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//27" << endl;
+
+
+    //27
+    int *C = new int[i];
+    for (int l = 0; l < i; l++) {
+        cout << "Введите " << l + 1 << "-ое число" << endl;
+        cin >> C[l];
+    }
+    for (int l = 0; l < i; l++) {
+        cout << C[l] << " ";
+    }
+    cout << endl;
+    //27
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); getline(cin, enter); cout << "//28" << endl;
+
+
+    //28
+    int D[5][5];
+    cout << "D = " << D << endl;
+    cout << "D + 1 = " << D + 1 << endl;
+    cout << "*D = " << *D << endl;
+    cout << "*D + 1 = " << *D + 1 << endl;
+    cout << "**D = " << **D << endl;
+    //28
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//29" << endl;
+
+
+    //29
+    for (int l = 0; l < 5; l++) {
+        for (int n = 0; n < 5; n++) {
+            D[l][n] = (l + 1)*(n + 1);
+        }
+    }
+    for (int l = 0; l < 5; l++) {
+        for (int n = 0; n < 5; n++) {
+           cout << D[l][n] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+    //29
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//30" << endl;
+
+
+    //30
+    int **E = new int *[i];
+    for (int l = 0; l < i; l++){
+        E[l] = new int [i];
+    }
+
+    for (int l = 0; l < i; l++) {
+        for (int n = 0; n < i; n++) {
+            cout << E[l][n] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+    //30
+
 }
