@@ -4,6 +4,11 @@
 
 using namespace std;
 
+int function(int a){
+    int b = a * a;
+    return b;
+}
+
 int main()
 {
     SetConsoleCP(CP_UTF8);
@@ -390,5 +395,14 @@ int main()
     }
     cout << endl;
     //30
+
+
+    cout << "Для продолжения нажмите Enter"; getline(cin, enter); cout << "//31" << endl;
+
+
+    //31
+    int n = function(5);
+    cout << "5^2 = " << n << endl;
+    //31
 
 }
